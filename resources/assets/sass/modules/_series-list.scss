@@ -1,0 +1,26 @@
+.series {
+    background: $content-bg-color;
+    @media #{$sm} {
+        & {
+            padding: 80px 0;
+        }
+    }
+
+    @media #{$xs} {
+        & {
+            padding: 30px 0;
+        }
+    }
+
+    &__container {
+        margin-bottom: 30px;
+    }
+
+    &--show {
+        @media #{$sm} {
+            & {
+                padding: 30px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+body {
+    color: $font-color;
+}
+
+html,
+body {
+    font-family: lato-regular,"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media #{$sm} {
+    body {
+        padding-top: 87px;
+    }
+}
+@media #{$xs} {
+    body {
+        padding-top: 57px;
+    }
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.description {
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #FFF;
+    margin-top: 15px;
+    @include round(5px);
+}
+
+.dateHuman {
+    padding: 0 15px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.video__list-time {
+    font-style: italic;
+    margin-right: 12px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+::selection {
+    background: #c0ecf4;
+}
+
+//定义全局logo
+.logo {
+    font-family: Lato,PingFang SC,Microsoft YaHei,sans-serif;
+    font-size: 2.7em;
+    letter-spacing: -.5px;
+}
+
+.zeroed {
+    margin: 0!important;
+    padding: 0!important;
+}

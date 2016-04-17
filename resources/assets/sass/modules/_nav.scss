@@ -1,0 +1,271 @@
+.learner-nav {
+    position: fixed;
+    top: 0px;
+    display: inline-table;
+    height: 87px;
+    background: #fff;
+    border-radius: 0;
+    border-bottom: none;
+    border-top: 2px solid #5ece80;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+header nav.navbar-default .navbar-nav .active a {
+    color: #343b3d;
+    background: transparent;
+    border-bottom: 4px solid #5ece80;
+    text-shadow: none;
+}
+
+header .navbar-default .navbar-nav>.active>a,
+header .navbar-default .navbar-nav>.active>a:focus,
+header .navbar-default .navbar-nav>.active>a:hover {
+    color: $font-hover-color;
+    background-color: transparent;
+}
+
+nav {
+    width: 100%;
+}
+
+nav .container {
+    position: relative;
+    width: 1024px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 80px;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -10px;
+}
+
+.logo-light {
+    opacity: 1;
+    display: table-cell;
+    vertical-align: middle;
+    height: 55px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.logo {
+    width: 32px;
+}
+
+.auth-header {
+    z-index: 9;
+    padding-top: 14px;
+    padding-left: 0px;
+    letter-spacing: 1px;
+}
+
+.nav-avatar-header {
+    margin-left: 20px;
+}
+
+.login-header,
+.register-header {
+    padding-top: 2px;
+    margin-left: 20px;
+
+    a {
+        color: $font-color;
+        padding: 6px;
+
+        &:hover {
+            text-decoration: none;
+            color: $font-hover-color;
+        }
+    }
+}
+
+.register-header {
+    float: right;
+    margin: 0 0 0 18px;
+    position: relative;
+    padding-bottom: 17px;
+
+    a {
+        background-color: #637b94;
+        color: #FFF;
+        border-radius: 2px;
+
+        &:hover {
+            color: #FFF;
+            background-color: darken(#637b94, 6%);
+        }
+    }
+}
+
+.login-header {
+    float: right;
+    position: relative;
+    padding-bottom: 17px;
+}
+
+.accordion-menu {
+    padding-right: 0px;
+}
+
+.nav > li {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.learner-dropdown {
+    left: -130px;
+    top: 44px;
+    background-color: rgba(27, 22, 28, 0.95);
+    clear: both;
+    min-height: 0;
+}
+
+.learner-dropdown li a {
+    color: #FFF;
+
+    &:hover,
+    &:focus {
+        color: #FFF;
+        background-color: rgba(#000, .39);
+    }
+}
+
+.nav-avatar-header {
+    float: right;
+}
+
+.nav-avatar {
+    position: relative;
+    top: -4px;
+    left: -8px;
+}
+.avatar {
+    width: 30px;
+    border-radius: 3px;
+}
+
+.nav-username {
+    color: #777;
+    position: relative;
+    bottom: -2px;
+    letter-spacing: 0.1px;
+}
+
+@media screen and (min-width: 992px) {
+    .nav > li {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -50px;
+    }
+    .nav-avatar-header {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-header.pull-right {
+        padding-right: 0;
+    }
+    .navbar-nav.navbar-right:last-child {
+        margin-right: 0px;
+    }
+    .navbar-default .navbar-toggle {
+        background-color: #5ece80;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: darken(#5ece80, 2%);
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #FFF;
+    }
+    .learner-nav {
+        height: 55px !important;
+    }
+    .learner-nav .container {
+        height: 55px !important;
+    }
+    .navbar .text-right {
+        background-color: rgba(27, 22, 28, 0.95);
+        clear: both;
+        min-height: 0;
+        padding: 0;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+    }
+    .learner-nav .text-right {
+        top: 55px;
+    }
+    .learner-nav .nav li {
+        float: left;
+        width: 100% !important;
+        margin: 0 !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+        transition: all .16s ease;
+
+        &:hover {
+            border-left: 4px solid #5ece80;
+            background-color: rgba(#000, .39);
+        }
+    }
+    .learner-nav .nav li.active {
+        float: right;
+
+        &:hover {
+            border-left: 0px solid #5ece80;
+            background-color: rgba(#000, .39);
+        }
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+        display: block;
+        height: 38px;
+        line-height: 38px;
+        padding: 0 0 0 15px;
+        text-align: left;
+    }
+    .nav-avatar {
+        position: relative;
+        top: -4px;
+        left: -8px;
+    }
+    .avatar {
+        width: 30px;
+        border-radius: 4px;
+    }
+    .navbar-collapse {
+        margin: 0;
+        padding: 0;
+    }
+    .login-header {
+        margin-left: 0;
+    }
+    .collapse.in {
+        width: 100%;
+        clear: both;
+        overflow: hidden;
+    }
+
+    header nav.navbar-default .navbar-nav li a {
+        &:hover {
+            color: #FFF;
+        }
+    }
+
+    header nav.navbar-default .navbar-nav li.active a {
+        color: #FFF;
+        background: transparent;
+        border-bottom: none;
+        border-left: 4px solid #5ece80;
+        text-shadow: none;
+
+        &:hover {
+            color: #FFF;
+        }
+    }
+}

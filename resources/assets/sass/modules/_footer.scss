@@ -1,0 +1,86 @@
+footer {
+    border-top: 1px solid #eee;
+    min-height: 100px;
+    margin-bottom: 1em;
+    color: $footer-font-color;
+    background: $background;
+    padding-top: 65px;
+    letter-spacing: -.2px;
+
+    font-family: Lato,PingFang SC,Microsoft YaHei,sans-serif;
+
+    .logo {
+        color: #464646;
+        display: inline-block;
+        margin-bottom: 8px;
+        position: relative;
+        top: -25px;
+    }
+
+    h1,h2,h3,h4,h5{
+        margin-top: 0;
+    }
+
+    ul {
+        list-style: none;
+        li {
+            line-height: 1.9em;
+        }
+    }
+
+    h5 {
+        color: #343434;
+        margin-bottom: 35px;
+        font-size: 1.4em;
+    }
+
+}
+
+.footer__site-description {
+    padding-right: 50px;
+    em {
+        //注意处理掉em特殊的显示
+        font-style: normal;
+        font-weight: bolder;
+        color: #00baf3;
+    }
+}
+
+.footer__connect {
+    margin-top: 10px;
+    padding: 0;
+    li {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 8px;
+        width: 40px;
+        text-align: center;
+        border-radius: 4px;
+        a{
+            padding: .2em 0 0;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .weibo {
+            background: #f75b5b;
+        }
+        .github {
+            background: #333;
+        }
+        .weixin {
+            background: #5fcf80;
+        }
+        .qq{
+            background: #24bdff;
+        }
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 40px;
+    font-size: 1.1em;
+}
+

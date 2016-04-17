@@ -1,0 +1,47 @@
+.page-jumbotron {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+    @media #{$sm} {
+        & {
+            padding: 60px 0;
+        }
+    }
+    @media #{$xs} {
+        & {
+            padding: 80px 0;
+        }
+    }
+}
+
+.series-page-jumbotron {
+    background: #5bab6b;
+}
+
+.category-page-jumbotron {
+    background: #231F20;
+}
+
+.video-page-jumbotron {
+    background: #C8A667;
+}
+
+.blog-page-jumbotron {
+    background: #249d9E;
+}
+
+.newsletter-page-jumbotron {
+    background: #2a9873;
+}
+
+.user-page-jumbotron {
+    background: #3FC2A4;
+}
+
+.not-found-page-jumbotron {
+    background: #3a4f64;
+}

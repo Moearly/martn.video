@@ -1,0 +1,17 @@
+.technique {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: $content-bg-color;
+
+    &__bar {
+        margin-bottom: 30px;
+
+        &__title {
+            font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            color: $font-hover-color;
+            margin: 0 0 30px 0;
+        }
+    }
+}
